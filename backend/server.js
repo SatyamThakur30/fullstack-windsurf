@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/auth', require('./routes/auth'));
 
 // MongoDB Connection
-const MONGODB_URI = 'mongodb+srv://innoeve4:o0jyHNaYv7Oq2VJI@cluster0.1am1i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+const MONGODB_URI = ''
 mongoose.connect(MONGODB_URI)
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
